@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Q9J-Qd-rdn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Discover-->
+        <scene sceneID="aL0-gL-yZA">
+            <objects>
+                <tableViewController id="SAk-G4-sMz" customClass="DiscoverTableViewController" customModule="FoodPin_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="184" sectionHeaderHeight="28" sectionFooterHeight="28" id="pKy-xA-yGf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="15" reuseIdentifier="Cell" rowHeight="184" id="cvs-It-idy" customClass="DiscoverTableViewCell" customModule="FoodPin_2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="184"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cvs-It-idy" id="81c-2b-x8T">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="183"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FIE-Oc-Gb5">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="183"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLf-bV-ppa">
+                                            <rect key="frame" x="12" y="146" width="66" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoK-MK-EyK">
+                                            <rect key="frame" x="12" y="102" width="79" height="36"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Cq-Zc-1G7">
+                                            <rect key="frame" x="12" y="16" width="38" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="RLf-bV-ppa" firstAttribute="top" secondItem="eoK-MK-EyK" secondAttribute="bottom" constant="8" symbolic="YES" id="Afn-ra-zhc"/>
+                                        <constraint firstItem="1Cq-Zc-1G7" firstAttribute="leading" secondItem="eoK-MK-EyK" secondAttribute="leading" id="Hre-Yc-G3R"/>
+                                        <constraint firstItem="1Cq-Zc-1G7" firstAttribute="top" secondItem="81c-2b-x8T" secondAttribute="topMargin" constant="8" id="baY-tR-LXJ"/>
+                                        <constraint firstItem="FIE-Oc-Gb5" firstAttribute="leading" secondItem="81c-2b-x8T" secondAttribute="leading" id="hsB-Ga-ak5"/>
+                                        <constraint firstAttribute="bottom" secondItem="FIE-Oc-Gb5" secondAttribute="bottom" id="itJ-Gg-Cmn"/>
+                                        <constraint firstItem="1Cq-Zc-1G7" firstAttribute="leading" secondItem="81c-2b-x8T" secondAttribute="leadingMargin" constant="4" id="jAp-oJ-1bc"/>
+                                        <constraint firstItem="1Cq-Zc-1G7" firstAttribute="leading" secondItem="RLf-bV-ppa" secondAttribute="leading" id="l06-JT-6Mr"/>
+                                        <constraint firstItem="eoK-MK-EyK" firstAttribute="top" secondItem="1Cq-Zc-1G7" secondAttribute="bottom" constant="65" id="na7-gk-Mji"/>
+                                        <constraint firstAttribute="trailing" secondItem="FIE-Oc-Gb5" secondAttribute="trailing" id="oZm-E9-mzp"/>
+                                        <constraint firstItem="FIE-Oc-Gb5" firstAttribute="top" secondItem="81c-2b-x8T" secondAttribute="top" id="sCC-kS-tLS"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="locationLabel" destination="RLf-bV-ppa" id="ZyT-nB-vnG"/>
+                                    <outlet property="nameLabel" destination="eoK-MK-EyK" id="Eld-hp-Mr7"/>
+                                    <outlet property="thumbnailimageView" destination="FIE-Oc-Gb5" id="AwT-MG-U2X"/>
+                                    <outlet property="typeLabel" destination="1Cq-Zc-1G7" id="tvn-xS-2hB"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SAk-G4-sMz" id="lEg-ms-6JW"/>
+                            <outlet property="delegate" destination="SAk-G4-sMz" id="q9h-p6-isr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Discover" id="c08-rk-aYj"/>
+                    <connections>
+                        <outlet property="spinner" destination="IEo-gL-ZKA" id="j6K-pt-Klz"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1nU-Zb-dZI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="IEo-gL-ZKA">
+                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
+            </objects>
+            <point key="canvasLocation" x="1911" y="-281"/>
+        </scene>
+        <!--Discover-->
+        <scene sceneID="4In-PM-Kgr">
+            <objects>
+                <navigationController id="Q9J-Qd-rdn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Discover" image="discover" id="CM9-XM-8Or"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OuL-6x-Jsy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SAk-G4-sMz" kind="relationship" relationship="rootViewController" id="uqg-Vp-isS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aoK-b3-gID" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1134" y="-274"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="discover" width="25" height="25"/>
+    </resources>
+</document>
